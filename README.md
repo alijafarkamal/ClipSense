@@ -1,4 +1,4 @@
-````markdown
+
 # ClipSense
 
 AI-powered insight extractor for YouTube videos. Paste a YouTube link, get instant summaries, timelines, Q&A, and full transcripts in a beautiful SaaS UI. Built for hackathons, demos, and investor pitches.
