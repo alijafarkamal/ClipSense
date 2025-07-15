@@ -138,7 +138,6 @@ Edit
 ![Screenshot 4](https://github.com/user-attachments/assets/6ecf7797-5dd3-4be7-9ed5-e20dd90876d6)  
 ![Screenshot 5](https://github.com/user-attachments/assets/00c1b765-020f-47dd-a771-4ad84f4a2a77)  
 
-
 📈 Roadmap
 Chrome Extension for in‑page insights
 
