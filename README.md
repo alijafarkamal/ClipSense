@@ -89,29 +89,31 @@
 
 ## 📦 Quickstart
 
-1. **Clone & Install**  
-   ```bash
-   git clone https://github.com/alijafarkamal/ClipSense.git
-   cd ClipSense
-Backend Setup
+### 1. **Clone & Install**
 
+bash
+git clone https://github.com/alijafarkamal/ClipSense.git
+cd ClipSense
+2. Backend Setup
 bash
 Copy
 Edit
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-# Create .env in project root:
-# OPENROUTER_API_KEY=your_openrouter_api_key
-uvicorn main:app --reload
-Frontend Setup
 
+# Create a .env file in the project root:
+# OPENROUTER_API_KEY=your_openrouter_api_key
+
+uvicorn main:app --reload
+3. Frontend Setup
 bash
 Copy
 Edit
 cd frontend
 npm install
 npm run dev
+
 # Visit http://localhost:3000
 📂 Folder Structure
 bash
@@ -126,11 +128,9 @@ Edit
     ├── styles/       # Tailwind config
     └── public/       # Static assets & icons
 🎬 Demo
-
 ▶️ Watch the 2‑minute demo video: YouTube (Unlisted)
 
-
-## Images
+🖼 Images
 
 ![Screenshot 1](https://github.com/user-attachments/assets/30ac20be-974b-4ba9-bdca-5e2b07404fc3)  
 ![Screenshot 2](https://github.com/user-attachments/assets/4af53e6d-6312-4900-a13b-d537b23f0987) 
