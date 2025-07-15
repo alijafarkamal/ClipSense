@@ -145,7 +145,7 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## 🎬 Demo
 
-▶️ Watch the 2‑minute demo video: YouTube (Unlisted)
+▶️ Watch the 3‑minute demo video: YouTube (https://youtu.be/3QPxsHDLaXw?si=233Ht8Ur_XMqnDs-)
 
 ---
 
