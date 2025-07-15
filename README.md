@@ -17,8 +17,7 @@ AI-powered insight extractor for YouTube videos. Paste a YouTube link, get insta
 
 ## Demo
 
-![ClipSense UI Screenshot](<img width="1823" height="784" alt="Screenshot from 2025-07-15 21-09-23" src="https://github.com/user-attachments/assets/8ac9972c-659f-46b7-a059-7d1d362fa846" />
-)
+![ClipSense UI Screenshot](<img width="1823" height="784" alt="Screenshot from 2025-07-15 21-09-23" src="https://github.com/user-attachments/assets/8ac9972c-659f-46b7-a059-7d1d362fa846" /> )
 
 ## Architecture
 
