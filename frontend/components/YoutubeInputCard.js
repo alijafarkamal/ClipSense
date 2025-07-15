@@ -28,7 +28,6 @@ export default function YoutubeInputCard({ youtubeUrl, setYoutubeUrl, loading, h
           "Extract Insights"
         )}
       </button>
-      {/* Optionally show stages here: <div className="mt-2 text-xs text-blue-600">{stage}</div> */}
     </form>
   );
 } 

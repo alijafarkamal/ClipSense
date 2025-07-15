@@ -13,7 +13,6 @@ import concurrent.futures
 
 app = FastAPI()
 
-# Allow all origins for hackathon/demo purposes
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -26,7 +25,6 @@ class ProcessRequest(BaseModel):
     youtube_url: str
 
 def extract_video_id(url: str) -> str:
-    # Handles various YouTube URL formats
     patterns = [
         r"youtu\.be/([\w-]{11})",
         r"youtube\.com/watch\?v=([\w-]{11})",
@@ -56,7 +54,6 @@ def chunk_transcript(transcript, chunk_minutes=5):
             current_start = start
     if current_chunk:
         chunks.append(current_chunk)
-    # Convert each chunk to text with timestamps
     chunk_texts = []
     for chunk in chunks:
         text = " ".join([f"[{str(timedelta(seconds=int(e['start'])))}] {e['text']}" for e in chunk])
@@ -72,7 +69,6 @@ def chunk_transcript_dynamic(transcript, num_chunks=10):
     for entry in transcript:
         idx = min(int(entry['start'] // chunk_length), num_chunks - 1)
         chunks[idx].append(entry)
-    # Convert each chunk to text with timestamps
     chunk_texts = []
     for chunk in chunks:
         text = " ".join([f"[{str(timedelta(seconds=int(e['start'])))}] {e['text']}" for e in chunk])
@@ -129,8 +125,8 @@ def call_openrouter_on_chunk(chunk_text):
     ]
     completion = client.chat.completions.create(
         extra_headers={
-            "HTTP-Referer": "https://clipsense.ai",  # Replace with your site URL
-            "X-Title": "ClipSense",  # Replace with your site name
+            "HTTP-Referer": "https://clipsense.ai",
+            "X-Title": "ClipSense",
         },
         extra_body={},
         model="moonshotai/kimi-k2:free",
@@ -139,7 +135,6 @@ def call_openrouter_on_chunk(chunk_text):
     return parse_gemini_response(completion.choices[0].message.content)
 
 def parse_gemini_response(text):
-    # Simple parser for the expected format
     summary, key_concepts, qa = [], [], []
     section = None
     for line in text.splitlines():
@@ -200,14 +195,12 @@ async def process_video(request: ProcessRequest):
         return {"error": "Transcript not available for this video."}
     except Exception as e:
         return {"error": str(e)}
-    # Dynamically chunk transcript into 5 equal parts
     chunks = chunk_transcript_dynamic(transcript, num_chunks=5)
     processed_chunks = process_video_chunks_parallel(chunks)
     summary = sum([c["summary"] for c in processed_chunks], [])
     timeline = sum([c["key_concepts"] for c in processed_chunks], [])
     qa = sum([c["qa"] for c in processed_chunks], [])
     title = get_video_title(video_id)
-    # Add full transcript text for frontend transcript button
     full_transcript = "\n".join([e['text'] for e in transcript])
     return {
         "title": title,

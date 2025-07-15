@@ -17,7 +17,6 @@ export default function Home() {
   const [error, setError] = useState("");
   const [showTranscript, setShowTranscript] = useState(false);
 
-  // Extract video ID for YouTube logo link
   const getVideoId = (url) => {
     const regExp = /(?:v=|\/)([0-9A-Za-z_-]{11}).*/;
     const match = url.match(regExp);
@@ -81,14 +80,13 @@ export default function Home() {
     doc.save("clipsense-notes.pdf");
   };
 
-  // Mock video metadata for Sidebar
   const videoMeta = result && {
     title: result.title,
-    channel: "Sample Channel", // Replace with real data if available
+    channel: "Sample Channel",
     thumbnail: `https://img.youtube.com/vi/${getVideoId(youtubeUrl)}/hqdefault.jpg`,
-    duration: "12:34", // Replace with real data if available
-    publishDate: "2024-07-14", // Replace with real data if available
-    viewCount: "1,234,567", // Replace with real data if available
+    duration: "12:34",
+    publishDate: "2024-07-14",
+    viewCount: "1,234,567",
     url: youtubeUrl,
   };
 
