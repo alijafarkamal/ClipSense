@@ -1,7 +1,7 @@
 
 # ClipSense
 
-AI-powered insight extractor for YouTube videos. Paste a YouTube link, get instant summaries, timelines, Q&A, and full transcripts in a beautiful SaaS UI. Built for hackathons, demos, and investor pitches.
+AI-powered insight extractor for YouTube videos. Paste a YouTube link, get instant summaries, timelines, Q&A, and full transcripts in a beautiful SaaS UI.
 
 ## Features
 
@@ -18,11 +18,14 @@ AI-powered insight extractor for YouTube videos. Paste a YouTube link, get insta
 
 ## Demo
 
-![Screenshot 5](https://github.com/user-attachments/assets/00c1b765-020f-47dd-a771-4ad84f4a2a77)  
-![Screenshot 4](https://github.com/user-attachments/assets/6ecf7797-5dd3-4be7-9ed5-e20dd90876d6)  
-![Screenshot 3](https://github.com/user-attachments/assets/59060c49-ac82-4b26-b34f-098c26ccf124)  
-![Screenshot 2](https://github.com/user-attachments/assets/4af53e6d-6312-4900-a13b-d537b23f0987)  
 ![Screenshot 1](https://github.com/user-attachments/assets/30ac20be-974b-4ba9-bdca-5e2b07404fc3)  
+![Screenshot 2](https://github.com/user-attachments/assets/4af53e6d-6312-4900-a13b-d537b23f0987) 
+![Screenshot 3](https://github.com/user-attachments/assets/59060c49-ac82-4b26-b34f-098c26ccf124) 
+![Screenshot 4](https://github.com/user-attachments/assets/6ecf7797-5dd3-4be7-9ed5-e20dd90876d6)  
+![Screenshot 5](https://github.com/user-attachments/assets/00c1b765-020f-47dd-a771-4ad84f4a2a77)  
+
+
+
 
 ## Architecture
 
