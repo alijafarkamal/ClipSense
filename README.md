@@ -91,7 +91,7 @@
 
 ### 1. **Clone & Install**
 
-bash
+```bash
 git clone https://github.com/alijafarkamal/ClipSense.git
 cd ClipSense
 2. Backend Setup
