@@ -1,3 +1,4 @@
+````markdown
 # ClipSense
 
 AI-powered insight extractor for YouTube videos. Paste a YouTube link, get instant summaries, timelines, Q&A, and full transcripts in a beautiful SaaS UI. Built for hackathons, demos, and investor pitches.
@@ -17,7 +18,11 @@ AI-powered insight extractor for YouTube videos. Paste a YouTube link, get insta
 
 ## Demo
 
-![ClipSense UI Screenshot](<img width="1823" height="784" alt="Screenshot from 2025-07-15 21-09-23" src="https://github.com/user-attachments/assets/8ac9972c-659f-46b7-a059-7d1d362fa846" /> )
+![Screenshot 5](https://github.com/user-attachments/assets/00c1b765-020f-47dd-a771-4ad84f4a2a77)  
+![Screenshot 4](https://github.com/user-attachments/assets/6ecf7797-5dd3-4be7-9ed5-e20dd90876d6)  
+![Screenshot 3](https://github.com/user-attachments/assets/59060c49-ac82-4b26-b34f-098c26ccf124)  
+![Screenshot 2](https://github.com/user-attachments/assets/4af53e6d-6312-4900-a13b-d537b23f0987)  
+![Screenshot 1](https://github.com/user-attachments/assets/30ac20be-974b-4ba9-bdca-5e2b07404fc3)  
 
 ## Architecture
 
@@ -39,7 +44,7 @@ AI-powered insight extractor for YouTube videos. Paste a YouTube link, get insta
 
 ### 1. Clone & Install
 
-```
+```bash
 git clone https://github.com/alijafarkamal/ClipSense.git
 cd ClipSense
 python3 -m venv venv
@@ -47,25 +52,25 @@ source venv/bin/activate
 pip install -r requirements.txt
 cd frontend
 npm install
-```
+````
 
 ### 2. Environment Variables
 
 Create a `.env` file in the root:
 
-```
+```bash
 OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
 ### 3. Run Backend
 
-```
+```bash
 uvicorn main:app --reload
 ```
 
 ### 4. Run Frontend
 
-```
+```bash
 cd frontend
 npm run dev
 ```
@@ -74,18 +79,19 @@ Visit [http://localhost:3000](http://localhost:3000)
 
 ## Folder Structure
 
-- `main.py` — FastAPI backend
-- `frontend/` — Next.js frontend
-  - `components/` — UI components
-  - `src/app/` — Main app logic
+* `main.py` — FastAPI backend
+* `frontend/` — Next.js frontend
+
+  * `components/` — UI components
+  * `src/app/` — Main app logic
 
 ## Tech Stack
 
-- FastAPI, Python, OpenAI (OpenRouter), youtube_transcript_api
-- Next.js, React, TailwindCSS, Headless UI, jsPDF, react-icons
+* FastAPI, Python, OpenAI (OpenRouter), youtube\_transcript\_api
+* Next.js, React, TailwindCSS, Headless UI, jsPDF, react-icons
 
 ## License
 
 MIT © 2025 Ali Jafar
 
-[GitHub Repo](https://github.com/alijafarkamal/ClipSense) 
+[GitHub Repo](https://github.com/alijafarkamal/ClipSense)
